@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN0N9tiURLYzFm6SsgaQYPh",
+      "authorship_tag": "ABX9TyP/VVaqM9oBduO2YEh0Zcsr",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -33,7 +33,37 @@
         "id": "3HnXIyZV6NjS"
       },
       "outputs": [],
-      "source": []
+      "source": [
+        "def calculator ():\n",
+        "  while true:\n",
+        "    num1 = imput(\"enter first number: \")\n",
+        "      if num1 == \"break\":\n",
+        "        break\n",
+        "      try:\n",
+        "        num1 = float(num1)\n",
+        "      except ValueError:\n",
+        "        print(\"Invalid input! Please enter a number or \"break\" to stop.)\n",
+        "        continue\n",
+        "\n",
+        "      operator = input(\"Enter the operator (+,-,*,/): \")\n",
+        "      if operator == \"break\":\n",
+        "        break\n",
+        "      if operator not in ['+','-','*','/']:\n",
+        "          print(\"Invalid operator! Please enter a valid operator or 'break' to stop.\")\n",
+        "          continue\n",
+        "\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "6_9XbUuA7F8R"
+      }
     }
   ]
 }
